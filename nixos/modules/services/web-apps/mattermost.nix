@@ -91,7 +91,7 @@ in
         description = ''
           Path to a json file containing secret config values which should
           not be written into the Nix store. If it is not null (the default)
-          and <xref linked="services.mattermost.mutableConfig">mutableConfig</xref>
+          and <option>services.mattermost.mutableConfig"</option>
           is set to <literal>false</literal>, then the mattermost service will
           join the options declared in this file into its config on startup. See
           <link xlink:href="https://docs.mattermost.com/administration/config-settings.html"/>
@@ -100,7 +100,7 @@ in
           Note that this merging will result in overwriting options which are
           set declaratively.
 
-          If <xref linkend="services.mattermost.mutableConfig">mutableConfig</xref>
+          if <option>services.mattermost.mutableConfig"</option>
           is set to <literal>true</literal>, then this option has no effect.
         '';
       };
